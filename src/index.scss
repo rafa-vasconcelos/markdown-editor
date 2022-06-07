@@ -1,0 +1,138 @@
+body {
+  background: rgba(143, 163, 176) !important; /* override of bootstrap */
+}
+
+.mainStyle {
+  box-shadow: 2px 4px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: rgb(203, 239, 242);
+  border: solid black 0.5px;
+  border-top: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+#toolbar {
+  background-color: rgb(24, 219, 187);
+  border: 1px solid black;
+  height: 30px;
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  padding-left: 10px;
+  box-shadow: 2px 4px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: -20px;
+}
+
+.fa-compress,
+.fa-arrows-alt {
+  float: right;
+  margin-right: 5px;
+  margin-top: 2px;
+  &:hover {
+    cursor: pointer;
+    color: lighten(black, 25%);
+  }
+}
+
+textarea {
+  @extend .mainStyle;
+  width: 45vw;
+  margin: auto;
+  height: 200px;
+  resize: vertical;
+  outline: none;
+  font-family: "Monospace";
+  padding: 5px;
+  align-self: stretch;
+}
+
+.editorWidth {
+  width: 45vw;
+}
+
+.previewWidth {
+  width: 65vw;
+}
+
+#preview {
+  @extend .mainStyle;
+  outline: none;
+  padding: 0 1rem;
+  width: 65vw;
+  overflow-wrap: break-word;
+  min-height: 400px;
+  blockquote {
+    border-left: 3px solid #224b4b;
+    color: #224b4b;
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+
+  > p > code {
+    padding: 3px;
+  }
+
+  code {
+    background: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  pre {
+    display: block;
+    overflow: auto;
+    background: white;
+    padding: 5px;
+    line-height: 1.2;
+  }
+
+  h1 {
+    border-bottom: 2px solid rgb(46, 45, 45);
+  }
+
+  h2 {
+    border-bottom: 1px solid rgb(46, 45, 45);
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 2px solid rgb(46, 45, 45);
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  img {
+    display: block;
+    max-width: 50%;
+    margin: 2rem auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  textarea {
+    width: 90vw;
+  }
+  
+  #preview {
+    width: 95vw;
+  }
+  
+ .editorWidth {
+  width: 90vw;
+}
+
+.previewWidth {
+  width: 95vw;
+}
+}
