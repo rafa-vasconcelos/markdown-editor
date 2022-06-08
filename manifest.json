@@ -1,5 +1,6 @@
 {
   "short_name": "Markdown Editor",
+  
   "name": "Markdown Editor",
   "icons": [
     {
@@ -10,6 +11,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "rgba(143, 163, 176)",
+  "background_color": "rgba(143, 163, 176)"
 }
