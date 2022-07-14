@@ -3,9 +3,8 @@ import Toolbar from "./Toolbar";
 import Editor from "./Editor";
 import Preview from "./Preview";
 import React from "react";
-// import ReactDOM from "react-dom/client";
 
-function App() {
+const App = () => {
   const placeholder = `# Seja bem vindo ao meu Editor de Markdown!
 
 ## Este é um subtítulo...
@@ -57,7 +56,7 @@ E aqui. | Okay. | Acho que você já entendeu.
     placeholderText: placeholder,
   });
 
-  function handleClick(event) {
+  const handleClick = (event) => {
     if (event.target.id === "editorToolbar") {
       setState((prevState) => ({
         ...prevState,
@@ -71,14 +70,14 @@ E aqui. | Okay. | Acho que você já entendeu.
         editorMaximized: false,
       }));
     }
-  }
+  };
 
-  function handleEditorChange(event) {
+  const handleEditorChange = (event) => {
     const newValue = event.target.value;
     setState((prevState) => {
       return { ...prevState, placeholderText: newValue };
     });
-  }
+  };
 
   if (state.editorMaximized === false && state.previewMaximized === false) {
     return (
@@ -139,8 +138,6 @@ E aqui. | Okay. | Acho que você já entendeu.
       </div>
     );
   }
-}
-
-// ReactDOM.render(<App />, document.getElementById("root"));
+};
 
 export default App;

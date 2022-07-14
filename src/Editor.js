@@ -1,4 +1,13 @@
-function Editor(props) {
+import React from "react";
+import PropTypes from "prop-types";
+
+const Editor = (props) => {
+  Editor.propTypes = {
+    placeholderText: PropTypes.string,
+    handleEditorChange: PropTypes.func,
+    maximized: PropTypes.object,
+  };
+
   return (
     <div className="text-center editor">
       <textarea
@@ -9,6 +18,6 @@ function Editor(props) {
       ></textarea>
     </div>
   );
-}
+};
 
 export default Editor;

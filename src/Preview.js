@@ -1,7 +1,13 @@
 import { marked } from "marked";
 import Prism from "prismjs";
+import React from "react";
+import PropTypes from "prop-types";
 
-function Preview(props) {
+const Preview = (props) => {
+  Preview.propTypes = {
+    placeholderText: PropTypes.string,
+  };
+
   marked.setOptions({
     breaks: true,
     highlight: function (code) {
@@ -17,6 +23,6 @@ function Preview(props) {
       }}
     ></div>
   );
-}
+};
 
 export default Preview;

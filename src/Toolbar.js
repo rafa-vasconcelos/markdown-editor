@@ -1,4 +1,15 @@
-function Toolbar(props) {
+import React from "react";
+import PropTypes from "prop-types";
+
+const Toolbar = (props) => {
+  Toolbar.propTypes = {
+    id: PropTypes.string,
+    toolbarIcon: PropTypes.string,
+    text: PropTypes.string,
+    expandIcon: PropTypes.string,
+    handleClick: PropTypes.func,
+  };
+
   return (
     <div
       id="toolbar"
@@ -12,6 +23,6 @@ function Toolbar(props) {
       />
     </div>
   );
-}
+};
 
 export default Toolbar;
