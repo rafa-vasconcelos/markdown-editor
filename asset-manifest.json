@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/markdown-editor/static/css/main.2902fddb.css",
-    "main.js": "/markdown-editor/static/js/main.5b7c9788.js",
+    "main.js": "/markdown-editor/static/js/main.ae77d03e.js",
     "index.html": "/markdown-editor/index.html",
     "main.2902fddb.css.map": "/markdown-editor/static/css/main.2902fddb.css.map",
-    "main.5b7c9788.js.map": "/markdown-editor/static/js/main.5b7c9788.js.map"
+    "main.ae77d03e.js.map": "/markdown-editor/static/js/main.ae77d03e.js.map"
   },
   "entrypoints": [
     "static/css/main.2902fddb.css",
-    "static/js/main.5b7c9788.js"
+    "static/js/main.ae77d03e.js"
   ]
 }
