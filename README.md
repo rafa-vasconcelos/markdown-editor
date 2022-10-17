@@ -15,7 +15,7 @@ Esta é a versão final do aplicativo em termo de funcionalidade. Melhorias na l
 
 ## Como rodar este aplicativo
 
-Este aplicativo foi feito através do _Create React App_. A versão live dele pode ser acessada através deste [link](https://rafael-lima-vasconcelos.github.io/drum-machine/).
+Este aplicativo foi feito através do _Create React App_. A versão live dele pode ser acessada através deste [link](https://rafa-vasconcelos.github.io/drum-machine/).
 Caso queira fazer o _deploy_ local, basta rodar o comando abaixo no terminal:
 
 ```
